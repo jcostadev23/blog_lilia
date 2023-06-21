@@ -1,5 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Navbar from './components/navbar'
+import ProfilePicture from './components/myprofilepic'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className='dark:bg-slate-800'>
+        <Navbar/>
+        <ProfilePicture/>
+        {children}</body>
     </html>
   )
 }
