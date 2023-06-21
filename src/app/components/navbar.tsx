@@ -16,6 +16,13 @@ export default function Navbar(){
                     <Link className='text-white/90 hover:text-white' href="https://www.facebook.com/liliadionisio.93">
                     <FaFacebook/>
                     </Link>
+                    <Link className='text-white/90 hover:text-white' href="https://instagram.com/lilia_dionisio25?igshid=ZDc4ODBmNjlmNQ==">
+                    <FaInstagram/>
+                    </Link>
+                    <Link className='text-white/90 hover:text-white' href="https://www.tiktok.com/@liliapatrici4.93?_t=8dMPTqgMikN&_r=1">
+                    <FaTiktok/>
+                    </Link>
+
                 </div>
             </div>
         </nav>
