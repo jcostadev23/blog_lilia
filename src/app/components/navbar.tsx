@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {FaFacebook, FaInstagram, FaTiktok} from 'react-icons/fa'
+import {FaFacebook, FaInstagram, FaTiktok, FaWhatsapp} from 'react-icons/fa'
 
 export default function Navbar(){
     return(
@@ -13,6 +13,9 @@ export default function Navbar(){
                 </h1>
                 <div className='flex flex-row justify-center sm:justify-evenly align-middle
                 gap-4 text-white text-4xl lg:text-5xl'>
+                       <Link className='text-white/90 hover:text-white' href="https://wa.link/tktxao">
+                    <FaWhatsapp/>
+                    </Link>
                     <Link className='text-white/90 hover:text-white' href="https://www.facebook.com/liliadionisio.93">
                     <FaFacebook/>
                     </Link>
