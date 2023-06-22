@@ -23,6 +23,9 @@ export default function RootLayout({
         <Navbar/>
         <ProfilePicture/>
         {children}
+        <h1 className='text-2xl font-bold text-black grid place-content-center mb-2 md:mb-0 border-t-2 border-gray-900'>
+          Alguns Trabalhos meus
+        </h1>
         <WorkPicture/>
         <footer className="bg-gray-400 text-black py-4 mt-16">
           <div className="container mx-auto flex items-center justify-center">
