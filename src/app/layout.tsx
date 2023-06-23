@@ -1,8 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './components/navbar'
-import ProfilePicture from './components/myprofilepic'
-import WorkPicture from './components/workpic'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,12 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className='dark:bg-slate-300'>
         <Navbar/>
-        <ProfilePicture/>
         {children}
-        <h1 className='text-2xl font-bold text-black grid place-content-center mb-2 md:mb-0 border-t-2 border-gray-900'>
-          Alguns Trabalhos meus
-        </h1>
-        <WorkPicture/>
         <footer className="bg-gray-400 text-black py-4 mt-16">
           <div className="container mx-auto flex items-center justify-center">
             <p className="text-sm">
@@ -34,7 +27,7 @@ export default function RootLayout({
             </p>
           </div>
         </footer>
-        </body>
+      </body>
     </html>
   )
 }
