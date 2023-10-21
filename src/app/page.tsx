@@ -1,16 +1,16 @@
+"use client"
 import { FC } from "react";
+import MyCard from "./components/Mycard";
 import WorkPicture from "./components/workpic";
-import MyCard from "./components/mycard";
-
 
 const page: FC = ({ }) => {
+
   return (
     <div>
       <MyCard />
-      <div className='text-2xl font-bold text-gray-600 grid place-content-center m-4 md:mb-0 border-t-2 '>
-        Alguns Trabalhos meus
+      <div className='grid place-content-center'>
+        <WorkPicture />
       </div>
-      <WorkPicture />
     </div>
   );
 }
