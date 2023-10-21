@@ -7,7 +7,7 @@ export default function Navbar() {
             <div className="prose prose-xl mx-auto flex justify-between
              flex-col sm:flex-row">
                 <a href='/' className='no-underline'>
-                    <h1 className='text-3xl text-gray-400 font-bold place-content-center mb-2 md:mb-0'>Lilia Make Up </h1>
+                    <h1 className='text-3xl text-white/100 font-bold place-content-start mb-2 md:mb-0'>Lilia Make Up </h1>
                 </a>
                 <div className='flex flex-row justify-center sm:justify-evenly align-middle
                 gap-4 text-white text-4xl lg:text-5xl'>
