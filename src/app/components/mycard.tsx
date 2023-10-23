@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePicture from "./Myprofilepic";
+import ProfilePicture from "./myprofilepic";
 
 export default function MyCard() {
   return (

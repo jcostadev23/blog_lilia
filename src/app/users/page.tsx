@@ -1,5 +1,5 @@
 import React from "react";
-import MyCard from "../components/Mycard";
+import MyCard from "../components/mycard";
 
 export default function Landing() {
 
