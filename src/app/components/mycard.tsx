@@ -1,3 +1,4 @@
+import React from "react";
 import ProfilePicture from "./Myprofilepic";
 
 export default function MyCard() {
