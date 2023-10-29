@@ -1,32 +1,30 @@
+"use client"
 import Image from "next/image";
-import React, { useState } from "react";
 
 export default function WorkPicture() {
-    const [showMyPages, setShowMyPages] = useState(false)
-    const imagePaths = Array.from({ length: 19 }, (_, index) => (`/images/workpic/pic${index + 1}.jpg`));
+    const imagePaths = Array.from({ length: 14 }, (_, index) => (`/images/workpic/pic${index + 1}.jpg`));
 
     return (
-        <div>
-            <button className={`bg-pink-300 hover:bg-pink-500 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300`}
-                onClick={() => setShowMyPages(!showMyPages)}>{(!showMyPages ? "Alguns Trabalhos " : "Fechar Trabalhos")}</button>
-            {showMyPages ?
-                <section className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 m-8'>
-                    {imagePaths.map((image, index) => (
-                        <a key={index} href={`/users/${index + 1}`} className='no-underline flex justify-center items-center'>
-                            <Image
-                                className='transition-transform transform-origin-center transform hover:scale-125 duration-500 ease-in-out drop-shadow-xl
+        <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 m-10'>
+            {imagePaths.map((image, index) => (
+                <a className="flex flex-col items-center no-underline" key={index} href={`/users/${index + 1}`}>
+                    <Image
+                        className='transition-transform transform-origin-center transform hover:scale-125 duration-500 ease-in-out drop-shadow-xl
                          shadow-black rounded mt-4'
-                                src={image}
-                                width={200}
-                                height={200}
-                                alt={'work picture'}
-                                priority={true}
-                            />
-                        </a>
-                    ))}
-                </section >
-                : ""}
-
+                        src={image}
+                        width={200}
+                        height={300}
+                        alt={'work picture'}
+                        priority={true}
+                    />
+                    <p className="text-lg text-gray-800 font-semibold text-center leading-7 mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ex! Atque aliquam maiores repellendus voluptatibus reprehenderit quibusdam obcaecati dolores quaerat.
+                    </p>
+                </a>
+            ))}
         </div>
+
+
+
     )
 }
