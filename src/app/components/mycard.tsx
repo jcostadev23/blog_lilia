@@ -3,29 +3,18 @@ import ProfilePicture from "./myprofilepic";
 
 export default function MyCard() {
   return (
-    <div className="w-full bg-cover bg-center m-8">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="sm:mt-4 mb-4 sm:mb-16 text-lg sm:text-2xl text-center text-gray-700">
-          <div className="flex flex-col sm:flex-row">
-            <section className="w-full sm:w-1/2 bg-cover bg-center" style={{ backgroundImage: `url('/images/background_pic/my_background.jpg')` }}>
-            </section>
-            <section className="w-full sm:w-1/2">
-              <div className="flex flex-col items-center sm:items-center m-8">
-                <ProfilePicture />
-                <h3 className="font-bold tracking-tight leading-none text-5xl ml-4 text-center sm:text-left">A Minha Paixão</h3>
-                <p className="mt-4 text-center sm:text-left">Exprimentar varias secções</p>
-                <ul className="mt-8 text-center sm:text-left">
-                  <li>Sombracelhas</li>
-                  <li>Olhos</li>
-                  <li>Simples</li>
-                  <li>Casamentos</li>
-                  <li>Batizados</li>
-                </ul>
-              </div>
-            </section>
+    <div className="card">
+      <div className="w-full bg-cover bg-center m-8 flex flex-col items-center justify-center sm:flex-row">
+        <section className="w-full sm:w-1/2 p-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima hic modi aperiam, natus obcaecati sunt odio quibusdam! Possimus eaque sint accusantium ipsum, reiciendis laborum? Fugiat soluta sit voluptatum ipsa eum rem voluptate, eos eligendi veritatis laudantium, est consectetur dignissimos, impedit recusandae ullam aut quae. Veritatis odit assumenda qui et voluptate!</p>
+        </section>
+        <section className="w-full sm:w-1/2 p-8">
+          <div className="flex flex-col items-center justify-center">
+            <ProfilePicture />
           </div>
-        </div>
+        </section>
       </div>
+      <a className="font-bold ml-4" href={`/users/about/`}>Mais sobre meu trabalho {'\u2192'} &hearts; </a>
     </div>
   );
 }
