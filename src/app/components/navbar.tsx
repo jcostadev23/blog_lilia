@@ -1,9 +1,8 @@
 "use client";
-import Image from "next/image";
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import DropDownMenu from "./menu/DropDouwnMenu";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <nav
       className="bg-pink-100 sticky top-0
@@ -42,4 +41,6 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
