@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import MyCard from "./components/Mycard";
+import MyCard from "./components/mycard";
 
 const page: FC = ({}) => {
   //testar o build
