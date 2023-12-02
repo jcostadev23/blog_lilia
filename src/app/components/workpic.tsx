@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import allData from "../storage/allData";
-import Description from "./Description";
+import Details from "./Details";
 
-export default function WorkPicture() {
+const WorkPicture = () => {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 m-4">
       {allData.map((data) => (
@@ -22,9 +22,11 @@ export default function WorkPicture() {
               alt={"work picture"}
             />
           </div>
-          <Description description={data.description} />
+          <Details details={data.details} />
         </a>
       ))}
     </div>
   );
-}
+};
+
+export default WorkPicture;
