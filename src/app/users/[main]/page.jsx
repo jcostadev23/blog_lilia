@@ -1,15 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import allData from "../../storage/allData";
-import { Workstypes } from "@/app/components/types";
 import Description from "@/app/components/Description";
 
-interface Props {
-  main: number;
-  works: Workstypes;
-}
-
-const SelectedWork: React.FC<Props> = (params) => {
+export default function SelectedWork({ params }) {
   const selectedId = allData.find((item) => item.id == params.main);
 
   return (
@@ -19,7 +13,16 @@ const SelectedWork: React.FC<Props> = (params) => {
           key={item}
           className="flex flex-col items-center justify-center mx-auto mt-10 space-x-8"
         >
-          <Image src={item} alt="personal picture" width={200} height={200} />
+          <div className="aspect-w-4 aspect-h-5">
+            <Image
+              className="transition-transform transform-origin-center transform hover:scale-150 duration-500 ease-in-out drop-shadow-xl
+                         shadow-black rounded mt-4"
+              src={item}
+              alt="personal picture"
+              width={200}
+              height={200}
+            />
+          </div>
           <Description description={selectedId.description} />
         </div>
       ))}
@@ -29,6 +32,4 @@ const SelectedWork: React.FC<Props> = (params) => {
       </a>
     </div>
   );
-};
-
-export default SelectedWork;
+}

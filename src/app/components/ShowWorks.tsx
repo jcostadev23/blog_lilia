@@ -9,10 +9,10 @@ interface Props {
 }
 
 const ShowWorks: React.FC<Props> = ({ params }) => {
-  const [sehowMyPages, setSehowMyPages] = useState(false);
+  const [showMyPages, setShowMyPages] = useState(false);
 
   const handleClick = () => {
-    setSehowMyPages(!sehowMyPages);
+    setShowMyPages(!showMyPages);
   };
 
   return (
