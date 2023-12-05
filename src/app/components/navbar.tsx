@@ -1,6 +1,6 @@
 "use client";
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
-import DropDownMenu from "./menu/DropDouwnMenu";
+import PlanetMenu from "./menu/PlanetMenu";
 
 const Navbar = () => {
   return (
@@ -9,10 +9,10 @@ const Navbar = () => {
         drop-shadow-xl z-10"
     >
       <div className="max-w-screen-xl p-1 mx-auto flex items-center justify-between sm:flex-row">
-        <div className="flex items-center space-x-2 flex-row text-white text-xl lg:text-xl ">
-          <DropDownMenu />
+        <div className="flex items-center space-x-2 ml-20 text-white">
+          <PlanetMenu />
         </div>
-        <div className="flex flex-row space-x-4 text-white text-4xl lg:text-5xl">
+        <div className="flex flex-row space-x-4 text-white text-4xl lg:text-5xl mr-10">
           <a
             className="text-blue-400/90 hover:text-blue-600"
             href="https://www.facebook.com/liliadionisio.93"
