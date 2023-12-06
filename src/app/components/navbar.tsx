@@ -9,10 +9,10 @@ const Navbar = () => {
         drop-shadow-xl z-10"
     >
       <div className="max-w-screen-xl p-1 mx-auto flex items-center justify-between sm:flex-row">
-        <div className="flex items-center space-x-2 ml-20 text-white">
+        <div className="flex items-center space-x-2 text-white">
           <PlanetMenu />
         </div>
-        <div className="flex flex-row space-x-4 text-white text-4xl lg:text-5xl mr-10">
+        <div className="flex flex-row space-x-2 text-white text-4xl lg:text-5xl">
           <a
             className="text-blue-400/90 hover:text-blue-600"
             href="https://www.facebook.com/liliadionisio.93"

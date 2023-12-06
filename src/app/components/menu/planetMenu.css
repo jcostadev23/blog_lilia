@@ -26,20 +26,25 @@
 }
 
 .menu .toggle.active {
-  transform: rotate(315deg);
-  box-shadow: 0 0 0 66px #fbfafa;
+  transform: rotate(180deg);
 }
 
 .menu li {
   position: absolute;
   list-style: none;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -50%);
   transition: transform 0.5s ease;
   color: transparent;
 }
 
 .menu.open li {
   color: rgb(36, 35, 35);
-  transform: translate(-50%, -50%) rotate(calc(var(--i) * 45deg))
-    translate(80px) rotate(calc(var(--i) * -45deg));
+  transform: translate(-15%, -60%) rotate(calc(var(--i) * 30deg))
+    translate(80px) rotate(calc(var(--i) * -30deg));
+}
+
+.menu li:hover {
+  transform: translate(-15%, -60%) rotate(calc(var(--i) * 30deg))
+    translate(80px) rotate(calc(var(--i) * -30deg)) scale(1.5);
+  color: rgb(36, 35, 35);
 }
