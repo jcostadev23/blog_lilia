@@ -1,17 +1,22 @@
 import Image from "next/image";
 
-const ProfilePicture = () => {
+interface Props {
+  src: string;
+  alt: string;
+}
+
+const ProfilePicture: React.FC<Props> = ({ src, alt }) => {
   return (
     <Image
       className="rounded shadow-lg"
-      src="/images/lilia/main.jpg"
+      src={src}
       height={550}
       width={300}
       style={{
         maxWidth: "100%",
         maxHeight: "auto",
       }}
-      alt="Lilia Dionisio"
+      alt={alt}
       priority={true}
     />
   );
