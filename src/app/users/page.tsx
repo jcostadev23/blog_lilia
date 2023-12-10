@@ -1,17 +1,88 @@
 import Image from "next/image";
 import React from "react";
+import ProfilePicture from "../components/myprofilepic";
 
 export default function About() {
-
-    return (
-        <>
-            <div className="flex flex-col items-center mx-auto mt-10 space-x-8">
-                <Image src="/images/lilia/personal1.jpg" alt="personal picture" width={300} height={300} />
-                <p className="text-lg text-center text-gray-800 mt-10">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit sunt quo repellendus nihil! Quibusdam modi libero accusamus laudantium reiciendis iste fuga ad nesciunt dolor nostrum temporibus veritatis aperiam, reprehenderit nulla possimus, consequatur omnis harum facilis at ea molestias animi cumque facere. Alias veniam totam omnis dolor ipsa deleniti ab! Suscipit, sed. Temporibus aspernatur aliquid itaque soluta ipsa distinctio earum inventore? Enim animi dignissimos accusamus facilis modi laboriosam commodi dolore temporibus aliquid omnis, consequatur necessitatibus illo neque, ipsum soluta obcaecati provident iste at inventore. Nisi, minima ipsam ab exercitationem ea esse modi sit architecto, quis aperiam odit odio facere, quaerat ipsa est. Repellat aliquam soluta fugiat ad? Atque voluptas laborum enim, ab, iusto nemo sed fuga labore, laboriosam ut dignissimos ratione velit quidem. Sapiente, voluptatibus. Tenetur corporis nulla, dicta ipsum aperiam est deleniti quo illum veritatis accusantium excepturi et optio sapiente quae iste soluta minus itaque amet fuga omnis animi ad mollitia. Expedita cum odit earum, impedit laudantium culpa nam, quasi non assumenda delectus doloribus reiciendis tenetur voluptate iure natus repudiandae nihil vel nemo laboriosam numquam quidem? Expedita perferendis, explicabo aliquid temporibus distinctio, eligendi esse ratione dolores sunt vitae inventore rerum voluptatum ex amet corporis illum, dolor autem quo. Consequuntur, iusto!
-                </p>
-            </div>
-            <a className="font-bold ml-4" href={'/'}>Pagina Inicial </a>
-        </>
-    )
+  return (
+    <>
+      <div className="flex flex-col items-center justify-center mx-auto m-10">
+        <ProfilePicture
+          src="/images/lilia/personal1.jpg"
+          alt="personal picture"
+        />
+        <section className="w-full sm:w-3/4 p-6">
+          <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
+            Brilho Veranil: Maquiagem Simples e Original para Fins de Semana
+            Radiantes
+          </h2>
+          <p className="text-lg text-gray-800 mt-10">
+            Liberte sua beleza com uma maquiagem simples, mas incrivelmente
+            original. Cores vibrantes e sutis brilham sob o sol do verão,
+            realçando sua luminosidade natural. Desperte a vivacidade do fim de
+            semana com uma maquiagem que captura a essência do verão em cada
+            detalhe. 💫🌞
+          </p>
+        </section>
+      </div>
+      <div className="flex flex-row items-center justify-center space-x-10 mr-10 mx-auto">
+        <section className="w-full sm:w-1/2 p-6">
+          <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
+            Redefinindo Beleza: Descubra o Poder da Maquiagem em Nosso Mundo de
+            Cores e Estilo
+          </h1>
+          <p className="text-lg text-gray-800 font-semibold mt-4">
+            <strong className="font-semibold">LiliaMakup</strong> não é apenas
+            um acessório de beleza; é uma afirmação. Delicie-se com a sensação
+            luxuosa de seu design cuidadosamente elaborado, enquanto ele
+            complementa a sua beleza natural e adiciona um toque de elegância à
+            sua vida cotidiana.
+          </p>
+        </section>
+        <ProfilePicture
+          src={"/images/lilia/wekend.jpg"}
+          alt={"Lilia Dionisio"}
+        />
+      </div>
+      <div className="flex flex-row items-center justify-center space-x-10  mx-auto m-10">
+        <ProfilePicture src="/images/lilia/happy.jpg" alt="personal picture" />
+        <section className="w-full sm:w-3/4 p-6">
+          <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
+            Brilho Veranil: Maquiagem Simples e Original para Fins de Semana
+            Radiantes
+          </h2>
+          <p className="text-lg text-gray-800 mt-10">
+            Liberte sua beleza com uma maquiagem simples, mas incrivelmente
+            original. Cores vibrantes e sutis brilham sob o sol do verão,
+            realçando sua luminosidade natural. Desperte a vivacidade do fim de
+            semana com uma maquiagem que captura a essência do verão em cada
+            detalhe. 💫🌞
+          </p>
+        </section>
+      </div>
+      <div className="flex flex-row items-center justify-center space-x-10 mr-10 gap-10">
+        <section className="w-full sm:w-1/2 p-6">
+          <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
+            Redefinindo Beleza: Descubra o Poder da Maquiagem em Nosso Mundo de
+            Cores e Estilo
+          </h1>
+          <p className="text-lg text-gray-800 font-semibold mt-4">
+            <strong className="font-semibold">LiliaMakup</strong> não é apenas
+            um acessório de beleza; é uma afirmação. Delicie-se com a sensação
+            luxuosa de seu design cuidadosamente elaborado, enquanto ele
+            complementa a sua beleza natural e adiciona um toque de elegância à
+            sua vida cotidiana.
+          </p>
+        </section>
+        <ProfilePicture
+          src={"/images/lilia/olhos.jpg"}
+          alt={"Lilia Dionisio"}
+        />
+      </div>
+      <div className="flex justify-center mt-20">
+        <a className="font-bold" href={"/"}>
+          Pagina Inicial{" "}
+        </a>
+      </div>
+    </>
+  );
 }
