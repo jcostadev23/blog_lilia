@@ -47,7 +47,7 @@ export default function PlanetMenu() {
         </a>
       </li>
       <li style={{ "--i": 4 }}>
-        <a className="flex gap-2" href="/">
+        <a className="flex gap-2" href="/error">
           <SettingsOutlinedIcon fontSize="medium" />
         </a>
       </li>

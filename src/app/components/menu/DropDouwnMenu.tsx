@@ -112,7 +112,7 @@ export default function DropDownMenu() {
                     </a>
                   </MenuItem>
                   <MenuItem onClick={handleClose}>
-                    <a className="flex gap-2" href="/">
+                    <a className="flex gap-2" href="/error">
                       <SettingsOutlinedIcon /> Settings
                     </a>
                   </MenuItem>
