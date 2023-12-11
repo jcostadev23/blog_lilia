@@ -6,8 +6,8 @@ import ProfilePicture from "./myprofilepic";
 const MainPage = () => {
   return (
     <>
-      <div className="flex flex-row items-center justify-center mt-10 mx-auto">
-        <section className="w-full sm:w-1/2 p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center mt-10">
+        <section className="w-full sm:w-3/4 text-center p-6">
           <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Redefinindo Beleza: Descubra o Poder da Maquiagem em Nosso Mundo de
             Cores e Estilo
@@ -20,14 +20,21 @@ const MainPage = () => {
             sua vida cotidiana.
           </p>
         </section>
-        <ProfilePicture src={"/images/lilia/main.jpg"} alt={"Lilia Dionisio"} />
+        <div className="flex items-center justify-center mx-auto">
+          <ProfilePicture
+            src={"/images/lilia/main.jpg"}
+            alt={"Lilia Dionisio"}
+          />
+        </div>
       </div>
-      <div className="flex flex-row items-center justify-center mt-10 mx-auto">
-        <ProfilePicture
-          src={"/images/background_pic/my_background.jpg"}
-          alt={"perfumes e pinces espalhados"}
-        />
-        <section className="w-full sm:w-1/2 p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center mt-10">
+        <div className="flex items-center justify-center mx-auto">
+          <ProfilePicture
+            src={"/images/background_pic/my_background.jpg"}
+            alt={"perfumes e pinces espalhados"}
+          />
+        </div>
+        <section className="w-full sm:w-3/4 text-center p-6">
           <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Essência Desvelada: A Pintura Sutil da Beleza Cotidiana
           </h2>
@@ -46,8 +53,8 @@ const MainPage = () => {
           </p>
         </section>
       </div>
-      <div className="flex flex-row items-center justify-center mt-10 mx-auto">
-        <section className="w-full sm:w-1/2 p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center mt-10">
+        <section className="w-full sm:w-3/4 text-center p-6">
           <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Paleta de Cores Deslumbrante: Explore a Beleza Infinita da Expressão
           </h2>
@@ -62,17 +69,21 @@ const MainPage = () => {
             #ExploreSuaCriação 💄🌈
           </p>
         </section>
-        <ProfilePicture
-          src={"/images/background_pic/colorPalete.jpg"}
-          alt={"perfumes e pinces espalhados"}
-        />
+        <div className="flex items-center justify-center mx-auto">
+          <ProfilePicture
+            src={"/images/background_pic/colorPalete.jpg"}
+            alt={"perfumes e pinces espalhados"}
+          />
+        </div>
       </div>
-      <div className="flex flex-row items-center justify-center mt-10 mx-auto">
-        <ProfilePicture
-          src={"/images/background_pic/lapisBatton.jpg"}
-          alt={"lapis e battons"}
-        />
-        <section className="w-full sm:w-1/2 p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center mt-10">
+        <div className="flex items-center justify-center mx-auto">
+          <ProfilePicture
+            src={"/images/background_pic/lapisBatton.jpg"}
+            alt={"lapis e battons"}
+          />
+        </div>
+        <section className="w-full sm:w-3/4 text-center p-6">
           <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Traços de Elegância: O Poder Transformador dos Lápis e Batons
           </h2>
