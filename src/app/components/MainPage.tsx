@@ -1,26 +1,22 @@
-import MyCard from "./mycard";
-import React, { FC } from "react";
-import Image from "next/image";
 import ProfilePicture from "./myprofilepic";
 
 const MainPage = () => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center mt-10">
-        <section className="w-full sm:w-3/4 text-center p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center">
+        <section className="w-full sm:w-3/4 text-center p-6 bg-transparent m-10 rounded shadow-lg">
           <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Redefinindo Beleza: Descubra o Poder da Maquiagem em Nosso Mundo de
             Cores e Estilo
           </h1>
           <p className="text-lg text-gray-800 font-semibold mt-4">
-            <strong className="font-semibold">LiliaMakup</strong> não é apenas
-            um acessório de beleza; é uma afirmação. Delicie-se com a sensação
-            luxuosa de seu design cuidadosamente elaborado, enquanto ele
-            complementa a sua beleza natural e adiciona um toque de elegância à
-            sua vida cotidiana.
+            LiliaMakup não é apenas um acessório de beleza; é uma afirmação.
+            Delicie-se com a sensação luxuosa de seu design cuidadosamente
+            elaborado, enquanto ele complementa a sua beleza natural e adiciona
+            um toque de elegância à sua vida cotidiana.
           </p>
         </section>
-        <div className="flex items-center justify-center mx-auto">
+        <div className="flex items-center justify-center mt-10">
           <ProfilePicture
             src={"/images/lilia/main.jpg"}
             alt={"Lilia Dionisio"}
@@ -34,7 +30,7 @@ const MainPage = () => {
             alt={"perfumes e pinces espalhados"}
           />
         </div>
-        <section className="w-full sm:w-3/4 text-center p-6">
+        <section className="w-full sm:w-3/4 text-center p-6 bg-transparent m-10 rounded shadow-lg">
           <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Essência Desvelada: A Pintura Sutil da Beleza Cotidiana
           </h2>
@@ -54,7 +50,7 @@ const MainPage = () => {
         </section>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center mt-10">
-        <section className="w-full sm:w-3/4 text-center p-6">
+        <section className="w-full sm:w-3/4 text-center p-6 bg-transparent m-10 rounded shadow-lg ">
           <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Paleta de Cores Deslumbrante: Explore a Beleza Infinita da Expressão
           </h2>
@@ -83,7 +79,7 @@ const MainPage = () => {
             alt={"lapis e battons"}
           />
         </div>
-        <section className="w-full sm:w-3/4 text-center p-6">
+        <section className="w-full sm:w-3/4 text-center p-6 bg-transparent m-10 rounded shadow-lg ">
           <h2 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-pink-600">
             Traços de Elegância: O Poder Transformador dos Lápis e Batons
           </h2>

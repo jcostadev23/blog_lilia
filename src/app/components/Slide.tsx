@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import allData from "../storage/allData";
 import { useEffect, useState } from "react";
+import allData from "../storage/allData";
 
 const SlidePicture = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

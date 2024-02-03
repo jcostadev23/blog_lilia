@@ -1,4 +1,3 @@
-import React from "react";
 import ProfilePicture from "./myprofilepic";
 
 const MyCard = () => {

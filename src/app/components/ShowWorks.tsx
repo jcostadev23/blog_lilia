@@ -18,7 +18,6 @@ const ShowWorks: React.FC<Props> = ({ params }) => {
   return (
     <div>
       <h1>Works!! ID: {params.main}</h1>
-
       <button onClick={handleClick}>Show Picture</button>
     </div>
   );
