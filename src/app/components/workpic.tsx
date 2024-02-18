@@ -2,25 +2,23 @@
 import Image from "next/image";
 import allData from "../storage/allData";
 import Details from "./Details";
+import SpecialCard from "./SpecialCard";
 
 const WorkPicture = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 m-10">
         {allData.map((data) => (
-          <a
-            className="flex flex-col no-underline bg-transparent rounded-lg overflow-hidden shadow-lg "
-            key={data.id}
-            href={`/users/${data.id}`}
-          >
-            <Image
-              className="object-cover w-full h-full transition-transform transform-origin-center transform hover:scale-125 duration-500 ease-in-out"
-              src={data.image1}
-              width={160}
-              height={160}
-              alt={"work picture"}
-            />
-            <Details details={data.details} />
+          <a key={data.id} href={`/users/${data.id}`}>
+            <SpecialCard>
+              <img
+                className="object-fit w-full h-full rounded-md"
+                src={data.image1}
+                alt="personal picture"
+                style={{ maxWidth: "300px", maxHeight: "300px" }}
+              />
+              <Details details={data.details} />
+            </SpecialCard>
           </a>
         ))}
       </div>
