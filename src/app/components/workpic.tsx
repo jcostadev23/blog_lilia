@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import allData from "../storage/allData";
 import Details from "./Details";
 import SpecialCard from "./SpecialCard";
