@@ -1,5 +1,5 @@
-import WorkPicture from "@/app/components/workpic";
+import WorkPicture from "@/app/components/Workpic";
 
 export default function Works() {
-    return <WorkPicture />
+  return <WorkPicture />;
 }

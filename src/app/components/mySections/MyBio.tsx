@@ -1,5 +1,5 @@
-import SpecialCard from "./SpecialCard";
-import ProfilePicture from "./myprofilepic";
+import SpecialCard from "../SpecialCard";
+import ProfilePicture from "./Myprofilepic";
 
 const MyBio = () => {
   return (

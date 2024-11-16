@@ -1,4 +1,3 @@
-"use client";
 import allData from "../storage/allData";
 import Details from "./Details";
 import SpecialCard from "./SpecialCard";

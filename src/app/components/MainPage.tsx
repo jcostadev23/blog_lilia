@@ -1,4 +1,4 @@
-import ProfilePicture from "./myprofilepic";
+import ProfilePicture from "./mySections/Myprofilepic";
 
 const MainPage = () => {
   return (

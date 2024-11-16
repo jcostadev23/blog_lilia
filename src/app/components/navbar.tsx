@@ -1,4 +1,3 @@
-"use client";
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import PlanetMenu from "./menu/PlanetMenu";
 
